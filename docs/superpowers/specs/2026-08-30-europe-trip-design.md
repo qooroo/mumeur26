@@ -3,7 +3,8 @@
 **Status:** Draft for review
 **Traveller:** L — mid-60s, Chinese passport with UK Permanent Residence, fluent English
 **Dates:** Mon 7 Sep – Sun 27 Sep 2026 (20 nights)
-**Shape:** London → Paris → Rome → Athens → Hydra → Athens → London
+**Shape:** London → Paris → Florence → Rome → Athens → Hydra → Athens → London
+**Day-by-day:** see `index.html` (published via GitHub Pages)
 
 ---
 
@@ -37,10 +38,11 @@ selection, not the itinerary's shape.
 
 ## 2. Why this shape
 
-**Three bases, one unpack per week.** The single biggest risk to a
-3-week solo trip is not danger or cost — it is fatigue. Frequent hotel
-changes are what exhaust travellers, so the plan uses long stays and
-accepts seeing less.
+**Long stays, few moves.** The single biggest risk to a 3-week solo
+trip is not danger or cost — it is fatigue, and frequent hotel changes
+are what exhaust travellers. Five bases across 20 nights keeps the
+average stay at four nights, and only one move (Florence → Rome) is
+anything other than a flight or a ferry.
 
 **The geography matches the weather.** Moving west-to-east happens to
 put each city in its best September window: Paris mild throughout; Rome
@@ -63,92 +65,69 @@ short internal flight, not a backtrack.
 - **Cycladic island (Naxos/Paros) instead of Hydra** — more beautiful,
   but 4–5hr ferries, wind-cancellation risk, and 5 solo dinners in a
   small town. Higher reward, materially higher friction.
-- **Skip Greece, add Florence** — logistically the easiest option
-  (Italian trains, no airports), but abandons the "somewhere novel /
-  make the most of the visa" goal that motivated Greece.
+- **Skip Greece entirely in favour of more Italy** — logistically the
+  easiest option, but abandons the "somewhere novel / make the most of
+  the visa" goal that motivated Greece in the first place.
+- **Venice as the second Italian city** — the highest novelty, but the
+  most friction: luggage over stepped bridges, vaporetto navigation, and
+  a 4hr train to Rome against Florence's 1hr30.
+- **Bologna as the second Italian city** — flat, arcaded, superb food,
+  far fewer crowds. Genuinely tempting, but no Uffizi and no David.
 
 ---
 
 ## 3. The itinerary
 
-> **Verification convention:** entries marked **[verify]** are opening
-> hours, closure days, or prices that change seasonally and MUST be
-> re-checked against the official site at booking time. Do not treat
-> them as settled.
+Revised after review: Paris reduced from 7 nights to 5, and Italy split
+across two cities. Full day-by-day detail lives in **`index.html`**.
 
-### PARIS — Mon 7 – Mon 14 Sep (7 nights)
-*Suggested area: 5th, 6th, 7th or the Marais — central, walkable, well-lit.*
-
-| Date | Day | Plan |
+| Dates | Base | Nights |
 |---|---|---|
-| **7 Sep** | Mon | **Arrive 18:47.** Pre-booked transfer from Gare du Nord (a busy station, and not where you want to be solving taxis with luggage after a travel day). Check in, light dinner near hotel. Nothing else scheduled. |
-| **8 Sep** | Tue | **Gentle orientation.** Louvre and Orangerie both closed Tuesdays **[verify]** — so: Sainte-Chapelle (morning, for the glass), Notre-Dame (reopened Dec 2024; free entry, reserve a slot in the official app), Île Saint-Louis. **Evening Seine cruise** — seated, low effort, superb orientation, and passes the Eiffel Tower as it lights up. |
-| **9 Sep** | Wed | **Louvre**, timed entry ~09:00. Hard cap of ~3 hours — pick two wings, not the whole museum. Then Tuileries and lunch. Afternoon free. |
-| **10 Sep** | Thu | **Musée d'Orsay** (Impressionists — likely the trip's artistic highlight; late opening Thursdays **[verify]**). Optionally the **Rodin Museum** nearby, whose garden is one of the most restful spots in Paris. |
-| **11 Sep** | Fri | **Day trip. Choose one:** *Versailles* (grand, but a lot of walking and crowds; closed Mondays **[verify]**) or *Giverny* — Monet's garden, open to ~1 Nov, gorgeous in September and considerably gentler. **I recommend Giverny** given the pace goal. |
-| **12 Sep** | Sat | **Montmartre** early (Sacré-Cœur, Place du Tertre) — take the funicular, skip the steps. **Eiffel Tower** late afternoon, summit booked; sunset is ~19:55 **[verify]**. |
-| **13 Sep** | Sun | **REST DAY.** The Marais is at its best on a Sunday (shops open, unusually for Paris). Place des Vosges. Optional: Musée Picasso or the Orangerie's Water Lilies. |
-| **14 Sep** | Mon | Fly Paris → Rome. |
+| Mon 7 – Sat 12 Sep | **Paris** | 5 |
+| Sat 12 – Wed 16 Sep | **Florence** | 4 |
+| Wed 16 – Mon 21 Sep | **Rome** | 5 |
+| Mon 21 – Thu 24 Sep | **Athens** | 3 |
+| Thu 24 – Sat 26 Sep | **Hydra** | 2 |
+| Sat 26 – Sun 27 Sep | **Athens** (buffer night) | 1 |
+| Sun 27 Sep | fly Athens → London | — |
 
-### ROME — Mon 14 – Mon 21 Sep (7 nights)
-*Suggested area: Monti, Trastevere, or near Piazza Navona. Avoid staying immediately around Termini, particularly for evenings.*
+**Why Florence, and why second.** Renaissance art complements Rome's
+antiquity and Paris's Impressionism, so the cities tell one continuous
+story. Placing it between Paris and Rome means the whole trip moves in
+one direction — fly Paris → Florence, then take the 1hr30 train south to
+Rome. Venice was rejected as the harder option (stepped bridges with
+luggage, a 4hr train to Rome); Bologna as the one without an Uffizi.
 
-| Date | Day | Plan |
-|---|---|---|
-| **14 Sep** | Mon | Midday flight. FCO → centre by pre-booked car (fixed-rate) or Leonardo Express (32 min to Termini). Evening walk + dinner in Trastevere. |
-| **15 Sep** | Tue | **Colosseum, Roman Forum, Palatine.** First slot ~09:00. Strongly consider a ~3hr guided tour — the Forum is close to meaningless without narration, and tours hold separate ticket allocation. Uneven ground, little shade. Afternoon rest, non-negotiable. |
-| **16 Sep** | Wed | **Deliberately light**, recovering from yesterday. Pantheon (~€5, book **[verify]**), Piazza Navona, Campo de' Fiori morning market. Trevi Fountain early morning or late evening only — midday is a crush. |
-| **17 Sep** | Thu | **Vatican Museums + Sistine Chapel + St Peter's.** Earliest slot or an early-access tour. 4–5 hours and genuinely tiring. **Dress code: shoulders and knees covered** — enforced. Afternoon rest. |
-| **18 Sep** | Fri | **Borghese Gallery** — 2-hour timed slot, closed Mondays, and it **sells out furthest ahead of anything in Rome**. Bernini sculpture at close range. Then Villa Borghese gardens; Spanish Steps nearby. |
-| **19 Sep** | Sat | **Ostia Antica** — 30 min by train, a full Roman port city, a fraction of Pompeii's crowds and effort. Half-day. (Alternative: Tivoli's Villa d'Este fountains.) |
-| **20 Sep** | Sun | Vatican closed Sundays **[verify]** — already covered Thursday. **Trastevere Sunday**: mosaics at Santa Maria in Trastevere, Porta Portese flea market (**Sunday mornings only**), long lunch. Last Rome evening. |
-| **21 Sep** | Mon | Fly Rome → Athens. |
+**Closure days resolved into the plan:**
+- **Tue 8 Sep** — Louvre and Orangerie closed → gentle Île de la Cité day.
+- **Mon 14 Sep** — Uffizi, Accademia and Pitti all closed → Siena day trip,
+  which is indifferent to museum hours.
+- **Sun 20 Sep** — Vatican closed → Vatican moved to Thu 17 Sep, which is
+  also less crowded than a Saturday.
+- **Tue 22 Sep** — National Archaeological Museum closed → Acropolis takes
+  that slot; the museum moves to Sat 26 Sep.
 
-### ATHENS — Mon 21 – Thu 24 Sep (3 nights)
-*Suggested area: Plaka, Koukaki, or Syntagma. Avoid Omonia at night.*
-**Athens is UTC+3 — one hour ahead of Rome. L loses an hour on this flight.**
+### Accepted trade-offs
 
-| Date | Day | Plan |
-|---|---|---|
-| **21 Sep** | Mon | Afternoon arrival. Metro Line 3 to Syntagma (~40 min) or fixed-rate taxi. **Book a hotel that will store luggage** — this matters on the 24th. Rooftop dinner with an Acropolis view. |
-| **22 Sep** | Tue | **Acropolis, 08:00 slot** — timed entry is mandatory now **[verify]**. Early is not optional: it is about heat and crowds both. Down by 11:00, then the **Acropolis Museum** (air-conditioned, and its Parthenon gallery makes sense of what she just walked through). Afternoon rest. |
-| **23 Sep** | Wed | **Ancient Agora** and the Temple of Hephaestus — the best-preserved Greek temple anywhere. Monastiraki and Plaka. **Afternoon: Cape Sounion**, ~1.5hr coastal drive, for sunset at the Temple of Poseidon. |
-| **24 Sep** | Thu | Morning ferry Piraeus → Hydra. **Leave the main suitcase at the Athens hotel.** |
+**Paris loses its day trip.** At 5 nights there is room for the city's own
+highlights or Versailles/Giverny, not both. The Eiffel Tower and
+Montmartre were protected instead, as this is a first visit.
 
-### HYDRA — Thu 24 – Sat 26 Sep (2 nights)
-**Hydra has no cars, no scooters — none. Luggage moves by donkey or
-porter.** This is exactly why the big suitcase stays in Athens. Book a
-room close to the harbour; much of the town is up steps.
-
-| Date | Day | Plan |
-|---|---|---|
-| **24 Sep** | Thu | Fast ferry from Piraeus, ~1h50 **[verify]** — book ahead. Arrive, settle, harbour evening. Swimming here is off rocky platforms with ladders (Spilia, Hydronetta), **not sand** — worth knowing in advance. |
-| **25 Sep** | Fri | **The decompression day.** Coastal path to Kamini and Vlychos (~40 min, largely flat, seaside the whole way), lunch at a beach taverna, water taxi back if tired. Sunset drinks at Hydronetta. |
-| **26 Sep** | Sat | Midday ferry back to Piraeus. |
-
-### ATHENS — Sat 26 – Sun 27 Sep (1 night)
-
-| Date | Day | Plan |
-|---|---|---|
-| **26 Sep** | Sat | Back to the same hotel, reunited with the suitcase. Afternoon: **National Archaeological Museum** (Mycenaean gold, the Antikythera mechanism) or simply rest. Farewell dinner. |
-| **27 Sep** | Sun | Fly Athens → London (direct, ~3h45). |
-
-**Why the return-to-Athens night exists:** it guarantees a cancelled or
-delayed ferry can never threaten the flight home. Ferry disruption on
-the Saronic Gulf is uncommon in late September but not unheard of, and
-the cost of insuring against it is one hotel night.
-
----
+**Rome has no rest day.** Five nights against four genuine must-sees makes
+this the fullest stretch of the trip. The lighter Borghese day is placed
+deliberately between the two heavy ones, and Hydra remains at the end as
+the decompression.
 
 ## 4. Transport summary
 
 | Leg | Mode | Approx duration | Notes |
 |---|---|---|---|
 | London → Paris | Eurostar 15:31 | 2h16 | **Already planned** |
-| Paris → Rome | Flight CDG/ORY → FCO | ~2h05 | Air France, ITA, easyJet, Vueling, Transavia |
-| Rome → Athens | Flight FCO → ATH | ~2h00 | Aegean, ITA, Sky Express, Ryanair. **+1hr time zone** |
+| Paris → Florence | Flight CDG → FLR | ~1h50 | Fallback: Paris → Pisa + 1hr train |
+| Florence → Rome | **Train** Firenze S.M.N. → Roma Termini | 1h30 | Frecciarossa / Italo. Centre to centre — no airport |
+| Rome → Athens | Flight FCO → ATH | ~2h00 | Aegean, ITA, Sky Express. **+1 hour time zone** |
 | Athens ⇄ Hydra | Fast ferry from Piraeus | ~1h50 each way | Book ahead; no cars on arrival |
-| Athens → London | Flight ATH → LHR/LGW | ~3h45 | Aegean, BA, easyJet, Wizz |
+| Athens → London | Flight ATH → LHR/LGW | ~3h45 | Aegean, BA, easyJet |
 
 ---
 
@@ -170,7 +149,8 @@ critical path.
       state healthcare in the EU but is not a substitute.
 
 ### Tier 1 — within 48 hours (prices climb daily at this range)
-- [ ] Flight Paris → Rome (14 Sep)
+- [ ] Flight Paris → Florence (12 Sep)
+- [ ] Train Florence → Rome (16 Sep)
 - [ ] Flight Rome → Athens (21 Sep)
 - [ ] Flight Athens → London (27 Sep)
 - [ ] All accommodation — **Rome central is the tight one in September**
@@ -178,16 +158,19 @@ critical path.
       luggage storage across the Hydra nights
 
 ### Tier 2 — within ~4 days (timed-entry, sells out)
-- [ ] **Borghese Gallery (18 Sep)** — books out furthest ahead of anything in Rome
+- [ ] **Galleria Borghese (18 Sep)** — books out furthest ahead of anything in Rome
+- [ ] **Uffizi (13 Sep)** — first slot
 - [ ] **Vatican Museums (17 Sep)** — official site only
-- [ ] **Colosseum (15 Sep)** — released 30 days ahead; if sold out, book a guided tour, which holds separate allocation
+- [ ] **Colosseum (19 Sep)** — released 30 days ahead; if sold out, book a guided tour, which holds separate allocation
 - [ ] **Acropolis (22 Sep, 08:00)** — official e-ticket site
-- [ ] Louvre (9 Sep), Musée d'Orsay (10 Sep), Eiffel Tower summit (12 Sep)
-- [ ] Giverny *or* Versailles (11 Sep)
+- [ ] Accademia / David (15 Sep), Duomo complex (15 Sep)
+- [ ] Louvre + Orangerie (9 Sep), Musée d'Orsay (10 Sep), Eiffel Tower summit (10 Sep)
+- [ ] Sainte-Chapelle (8 Sep), Notre-Dame app slot (8 Sep)
 
 ### Tier 3 — before departure
 - [ ] Hydra ferries, both directions (24 and 26 Sep)
-- [ ] Airport transfers: Gare du Nord arrival, FCO, ATH
+- [ ] Siena day trip (14 Sep); Cape Sounion sunset trip (23 Sep)
+- [ ] Airport transfers: Gare du Nord arrival, Florence, FCO, ATH
 - [ ] eSIM covering France, Italy and Greece
 - [ ] Notify card issuers of travel dates
 
@@ -254,6 +237,9 @@ journal/                  daily entries written during the trip
 ## 9. Open questions
 
 1. **Budget band** — confirm or correct the mid-range assumption in §1.
-2. **11 Sep: Giverny or Versailles?** I recommend Giverny.
-3. **Return date** — 27 Sep gives 20 nights. Is 28 Sep also viable, or
-   is 27 Sep fixed by something?
+   It changes hotel selection, not the itinerary's shape.
+2. **Return date** — 27 Sep gives 20 nights. If 28 Sep is also viable,
+   the extra night is best spent in Paris, which is the leg that lost
+   its day trip.
+3. **Rome guided tours** — worth booking a guide for the Forum, and
+   possibly the Vatican. Confirm appetite and budget for these.

@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>老妈欧洲游26 · 7–27 September 2026</title>
+<style>
+:root{
+  --ink:#2d2a26; --ink-soft:#5f584f; --ink-faint:#8b8177;
+  --bg:#faf7f2; --card:#fffdfa; --line:#e6ded2;
+  --paris:#34518a; --florence:#b7791f; --rome:#9b2c2c;
+  --athens:#2c7a7b; --hydra:#2b6cb0; --transit:#7d7469;
+  --warn:#a8442a; --ok:#2f6b4f;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:76px}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:Georgia,"Iowan Old Style","Times New Roman","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Serif SC",serif;font-weight:600;line-height:1.25;margin:0}
+
+/* ---------- header ---------- */
+header.hero{
+  background:linear-gradient(150deg,#1f3557 0%,#34518a 40%,#2c7a7b 100%);
+  color:#fff;padding:52px 0 44px;
+}
+header.hero h1{font-size:2.6rem;letter-spacing:1px}
+header.hero .sub-en{font-size:1.05rem;opacity:.8;margin-top:8px;letter-spacing:2.4px;text-transform:uppercase;font-weight:600}
+header.hero .sub{font-size:1.1rem;opacity:.92;margin-top:10px}
+header.hero .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  padding:6px 14px;border-radius:999px;font-size:.85rem;letter-spacing:.2px}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;
+  scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;text-decoration:none;color:var(--ink-soft);font-size:.85rem;
+  font-weight:600;padding:7px 13px;border-radius:999px;border:1px solid transparent;
+  white-space:nowrap;transition:.15s}
+nav a:hover{background:#fff;border-color:var(--line);color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{padding:44px 0 8px}
+.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:8px}
+h2.city{font-size:1.95rem;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+h2.city .nights{font-family:inherit;font-size:.85rem;font-weight:600;letter-spacing:.4px;
+  text-transform:uppercase;color:#fff;padding:4px 11px;border-radius:999px}
+.blurb{color:var(--ink-soft);margin:14px 0 26px;max-width:68ch}
+
+/* ---------- overview table ---------- */
+.overview{width:100%;border-collapse:collapse;margin:8px 0 10px;font-size:.95rem;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.overview th{text-align:left;font-size:.72rem;letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--ink-faint);padding:12px 16px;border-bottom:1px solid var(--line);font-weight:700}
+.overview td{padding:12px 16px;border-bottom:1px solid #f0eae0;vertical-align:middle}
+.overview tr:last-child td{border-bottom:none}
+.overview .place{font-weight:650}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:9px;vertical-align:baseline}
+
+/* ---------- day cards ---------- */
+.day{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:16px;overflow:hidden;box-shadow:0 1px 2px rgba(45,42,38,.04)}
+.day-head{display:flex;align-items:center;gap:16px;padding:16px 20px;border-bottom:1px solid #f2ece2}
+.date-badge{flex:0 0 auto;width:56px;text-align:center;border-radius:10px;padding:7px 0;color:#fff}
+.date-badge .d{display:block;font-family:Georgia,serif;font-size:1.4rem;line-height:1;font-weight:600}
+.date-badge .m{display:block;font-size:.62rem;letter-spacing:1.2px;text-transform:uppercase;
+  opacity:.9;margin-top:3px}
+.day-title{flex:1;min-width:0}
+.day-title h3{font-size:1.15rem}
+.day-title .dow{font-size:.76rem;letter-spacing:1.3px;text-transform:uppercase;
+  color:var(--ink-faint);font-weight:700;margin-bottom:3px}
+.day-body{padding:6px 20px 18px}
+
+/* ---------- schedule ---------- */
+ul.sched{list-style:none;margin:0;padding:0}
+ul.sched li{display:flex;gap:16px;padding:11px 0;border-bottom:1px dashed #efe8dd}
+ul.sched li:last-child{border-bottom:none}
+.t{flex:0 0 62px;font-variant-numeric:tabular-nums;font-size:.85rem;font-weight:700;
+  color:var(--ink-faint);padding-top:2px;letter-spacing:.3px}
+.t.free{font-weight:600;font-style:italic;letter-spacing:0}
+.ev{flex:1;min-width:0}
+.ev strong{font-weight:650}
+.ev .note{display:block;color:var(--ink-soft);font-size:.9rem;margin-top:3px}
+
+/* ---------- tags & callouts ---------- */
+.tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.7px;
+  text-transform:uppercase;padding:3px 8px;border-radius:5px;margin-left:7px;
+  vertical-align:1px;white-space:nowrap}
+.tag.book{background:#fdeee8;color:var(--warn);border:1px solid #f6d4c8}
+.tag.timed{background:#eef2fb;color:var(--paris);border:1px solid #d6e0f5}
+.tag.free-t{background:#eaf4ee;color:var(--ok);border:1px solid #cfe6d8}
+.tag.rest{background:#f3efe7;color:var(--ink-soft);border:1px solid #e6ded2}
+
+.callout{display:flex;gap:12px;background:#fdf6ef;border:1px solid #f0dcc8;
+  border-left:4px solid var(--warn);border-radius:10px;padding:13px 16px;margin:14px 0 4px;
+  font-size:.92rem;color:#6b4632}
+.callout.info{background:#f0f6f6;border-color:#cfe3e3;border-left-color:var(--athens);color:#2a5758}
+.callout .ic{flex:0 0 auto;font-weight:700}
+.callout p{margin:0}
+.callout strong{color:inherit}
+
+/* ---------- checklist ---------- */
+.tier{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 20px;margin-bottom:14px}
+.tier h4{font-size:1.02rem;margin-bottom:4px}
+.tier .when{font-size:.78rem;letter-spacing:.8px;text-transform:uppercase;
+  color:var(--ink-faint);font-weight:700;margin-bottom:12px}
+.tier.t0{border-left:4px solid var(--warn)}
+.tier.t1{border-left:4px solid var(--florence)}
+.tier.t2{border-left:4px solid var(--paris)}
+.tier.t3{border-left:4px solid var(--transit)}
+label.chk{display:flex;gap:11px;align-items:flex-start;padding:7px 0;cursor:pointer;font-size:.95rem}
+label.chk input{margin:5px 0 0;flex:0 0 auto;width:16px;height:16px;accent-color:var(--athens);cursor:pointer}
+label.chk input:checked + span{text-decoration:line-through;color:var(--ink-faint)}
+label.chk span{transition:.15s}
+
+/* ---------- notes grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.note-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.note-card h4{font-size:1rem;margin-bottom:9px}
+.note-card p{margin:0 0 9px;font-size:.92rem;color:var(--ink-soft)}
+.note-card p:last-child{margin-bottom:0}
+.note-card strong{color:var(--ink)}
+
+footer{margin-top:48px;padding:30px 0 46px;border-top:1px solid var(--line);
+  color:var(--ink-faint);font-size:.86rem}
+footer p{margin:0 0 8px;max-width:70ch}
+
+@media (max-width:620px){
+  header.hero h1{font-size:1.85rem}
+  body{font-size:16px}
+  ul.sched li{flex-direction:column;gap:2px}
+  .t{flex-basis:auto}
+  h2.city{font-size:1.5rem}
+}
+@media print{
+  nav,footer{display:none}
+  body{background:#fff;font-size:11pt}
+  header.hero{background:#34518a!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .day,.tier,.note-card{break-inside:avoid;page-break-inside:avoid;box-shadow:none}
+  section{padding-top:18px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>老妈欧洲游26</h1>
+    <div class="sub-en">Three Weeks in Europe</div>
+    <div class="sub">Paris · Florence · Rome · Athens · Hydra</div>
+    <div class="meta">
+      <span class="pill">7 – 27 September 2026</span>
+      <span class="pill">20 nights</span>
+      <span class="pill">Solo · L</span>
+      <span class="pill">First pass — for review</span>
+    </div>
+  </div>
+</header>
+
+<nav><div class="wrap">
+  <a href="#overview">Overview</a>
+  <a href="#paris">Paris</a>
+  <a href="#florence">Florence</a>
+  <a href="#rome">Rome</a>
+  <a href="#athens">Athens</a>
+  <a href="#hydra">Hydra</a>
+  <a href="#home">Home</a>
+  <a href="#bookings">Bookings</a>
+  <a href="#notes">Practical</a>
+</div></nav>
+
+<div class="wrap">
+
+<!-- ===================== OVERVIEW ===================== -->
+<section id="overview">
+  <div class="eyebrow">At a glance</div>
+  <h2 class="city">The shape of the trip</h2>
+  <p class="blurb">Five bases, moving west to east. One anchor activity per day, scheduled in
+  the morning, with afternoons left free — the pace is deliberate, not a shortfall. The route
+  also puts each city in its best September window: Paris mild throughout, Italy cooling across
+  the month, and Greece at its annual best right at the end.</p>
+
+  <table class="overview">
+    <thead><tr><th>Dates</th><th>Where</th><th>Nights</th><th>Getting there</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 7 – Sat 12 Sep</td><td class="place"><span class="swatch" style="background:var(--paris)"></span>Paris</td><td>5</td><td>Eurostar from London, 15:31</td></tr>
+      <tr><td>Sat 12 – Wed 16 Sep</td><td class="place"><span class="swatch" style="background:var(--florence)"></span>Florence</td><td>4</td><td>Flight, ~1h50</td></tr>
+      <tr><td>Wed 16 – Mon 21 Sep</td><td class="place"><span class="swatch" style="background:var(--rome)"></span>Rome</td><td>5</td><td>Fast train, 1h30</td></tr>
+      <tr><td>Mon 21 – Thu 24 Sep</td><td class="place"><span class="swatch" style="background:var(--athens)"></span>Athens</td><td>3</td><td>Flight, ~2h · <strong>+1 hour</strong></td></tr>
+      <tr><td>Thu 24 – Sat 26 Sep</td><td class="place"><span class="swatch" style="background:var(--hydra)"></span>Hydra</td><td>2</td><td>Fast ferry, ~1h50</td></tr>
+      <tr><td>Sat 26 – Sun 27 Sep</td><td class="place"><span class="swatch" style="background:var(--athens)"></span>Athens again</td><td>1</td><td>Ferry back · buffer night</td></tr>
+      <tr><td>Sun 27 Sep</td><td class="place"><span class="swatch" style="background:var(--transit)"></span>London</td><td>—</td><td>Flight, ~3h45</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info">
+    <span class="ic">↺</span>
+    <p><strong>Why Athens appears twice.</strong> The final Athens night guarantees a delayed or
+    cancelled ferry can never threaten the flight home. It also means the main suitcase stays at
+    the Athens hotel while L crosses to Hydra with an overnight bag — which matters, because
+    <strong>Hydra has no cars at all</strong> and luggage moves by donkey.</p>
+  </div>
+</section>
+
+<!-- ===================== PARIS ===================== -->
+<section id="paris">
+  <div class="eyebrow">Leg one</div>
+  <h2 class="city">Paris <span class="nights" style="background:var(--paris)">5 nights · 7–12 Sep</span></h2>
+  <p class="blurb">Four full days. Enough for the city's own highlights, but not for a day trip
+  as well — Versailles and Giverny both fall out at this length. Stay central: the 5th, 6th, 7th
+  or the Marais, all walkable and well-lit.</p>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--transit)"><span class="d">7</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Monday · Travel day</div><h3>London → Paris</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">14:30</span><span class="ev"><strong>St Pancras International</strong><span class="note">Check-in closes 30 minutes before departure. Arrive with room to spare.</span></span></li>
+      <li><span class="t">15:31</span><span class="ev"><strong>Eurostar departs</strong> <span class="tag book">booked</span><span class="note">2hr16 to Paris Gare du Nord.</span></span></li>
+      <li><span class="t">18:47</span><span class="ev"><strong>Arrive Gare du Nord</strong> <span class="tag book">book transfer</span><span class="note">A busy station — a pre-booked transfer avoids solving taxis with luggage at the end of a travel day.</span></span></li>
+      <li><span class="t">20:00</span><span class="ev"><strong>Check in, light dinner nearby</strong> <span class="tag rest">easy</span><span class="note">Nothing else scheduled. Deliberately.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--paris)"><span class="d">8</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Tuesday</div><h3>Île de la Cité &amp; the Seine</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">!</span><p><strong>The Louvre and the Orangerie are both closed on Tuesdays.</strong> Which suits a first full day anyway — this one is deliberately gentle.</p></div>
+      <ul class="sched">
+      <li><span class="t">10:00</span><span class="ev"><strong>Sainte-Chapelle</strong> <span class="tag timed">book slot</span><span class="note">Go in the morning — the upper chapel's windows need direct light to do what they do.</span></span></li>
+      <li><span class="t">11:30</span><span class="ev"><strong>Conciergerie</strong><span class="note">Optional, next door, combined ticket available.</span></span></li>
+      <li><span class="t">12:30</span><span class="ev"><strong>Lunch on Île Saint-Louis</strong><span class="note">Berthillon for ice cream afterwards.</span></span></li>
+      <li><span class="t">14:30</span><span class="ev"><strong>Notre-Dame</strong> <span class="tag free-t">free entry</span><span class="note">Reopened December 2024. Free, but reserve a time slot in the official app to skip the queue.</span></span></li>
+      <li><span class="t">16:00</span><span class="ev"><strong>Latin Quarter &amp; Shakespeare and Company</strong> <span class="tag rest">unstructured</span></span></li>
+      <li><span class="t">19:30</span><span class="ev"><strong>Evening Seine cruise</strong> <span class="tag book">book ahead</span><span class="note">Seated, low effort, and the best orientation in Paris. The Eiffel Tower sparkles on the hour after dark.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--paris)"><span class="d">9</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Wednesday</div><h3>The Louvre &amp; the Water Lilies</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>Louvre</strong> — timed entry <span class="tag timed">book slot</span><span class="note"><strong>Hard cap of three hours.</strong> Two wings, not the whole museum: Denon (Mona Lisa, Winged Victory, Italian painting) and Sully (Venus de Milo, Egyptian antiquities). Trying to "do" the Louvre on day three is how people arrive in Rome already exhausted.</span></span></li>
+      <li><span class="t">12:30</span><span class="ev"><strong>Lunch in the Tuileries</strong></span></li>
+      <li><span class="t">14:30</span><span class="ev"><strong>Musée de l'Orangerie</strong> <span class="tag timed">book slot</span><span class="note">Ten minutes' walk. Monet's Water Lilies in two oval rooms built for them — small, calm, and a complete contrast to the morning.</span></span></li>
+      <li><span class="t free">late</span><span class="ev"><strong>Rest, then Palais-Royal gardens at dusk</strong> <span class="tag rest">easy</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--paris)"><span class="d">10</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Thursday</div><h3>Impressionists &amp; the Eiffel Tower</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">09:30</span><span class="ev"><strong>Musée d'Orsay</strong> <span class="tag timed">book slot</span><span class="note">Monet, Renoir, Degas, Van Gogh in a converted railway station. Likely the artistic highlight of the trip.</span></span></li>
+      <li><span class="t">12:30</span><span class="ev"><strong>Lunch nearby</strong></span></li>
+      <li><span class="t">14:00</span><span class="ev"><strong>Rodin Museum garden</strong> <span class="tag rest">restful</span><span class="note">One of the most peaceful places in central Paris. The garden alone is worth it — a cheaper garden-only ticket exists.</span></span></li>
+      <li><span class="t">16:00</span><span class="ev"><strong>Back to the hotel to rest</strong> <span class="tag rest">rest</span><span class="note">Genuinely rest — there's a late evening ahead.</span></span></li>
+      <li><span class="t">18:30</span><span class="ev"><strong>Eiffel Tower, summit</strong> <span class="tag timed">book slot</span><span class="note">Timed for sunset, around 19:55. Lifts all the way — no stairs needed. Book the summit specifically; it sells out first.</span></span></li>
+      <li><span class="t">21:00</span><span class="ev"><strong>Dinner around Rue Cler</strong></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--paris)"><span class="d">11</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Friday</div><h3>Montmartre &amp; the Marais</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>Montmartre, early</strong><span class="note">Take the funicular up — it's covered by a standard Métro ticket and skips the staircase. Sacré-Cœur, Place du Tertre, then down Rue Lepic. Go early; by midday it's shoulder to shoulder.</span></span></li>
+      <li><span class="t">12:00</span><span class="ev"><strong>Lunch in Montmartre</strong></span></li>
+      <li><span class="t">14:30</span><span class="ev"><strong>The Marais</strong><span class="note">Place des Vosges, Rue des Rosiers, and the small streets between. Optionally the Musée Picasso.</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Last Paris dinner, then pack</strong></span></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ===================== FLORENCE ===================== -->
+<section id="florence">
+  <div class="eyebrow">Leg two</div>
+  <h2 class="city">Florence <span class="nights" style="background:var(--florence)">4 nights · 12–16 Sep</span></h2>
+  <p class="blurb">Renaissance art after Paris's Impressionism and before Rome's antiquity — the
+  three cities tell one continuous story rather than repeating each other. Florence is compact
+  and flat; almost everything is within twenty minutes on foot.</p>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--transit)"><span class="d">12</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Saturday · Travel day</div><h3>Paris → Florence</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t free">morning</span><span class="ev"><strong>Unhurried checkout</strong><span class="note">No early start. Coffee, then to the airport.</span></span></li>
+      <li><span class="t">midday</span><span class="ev"><strong>Flight to Florence</strong> <span class="tag book">book now</span><span class="note">~1hr50 direct. If direct flights are awkward, Paris → Pisa plus a 1hr train works just as well.</span></span></li>
+      <li><span class="t">~16:00</span><span class="ev"><strong>Arrive, transfer, check in</strong></span></li>
+      <li><span class="t free">dusk</span><span class="ev"><strong>Piazza della Signoria &amp; Ponte Vecchio</strong> <span class="tag rest">easy</span><span class="note">A first walk with no agenda. The Ponte Vecchio at dusk is the introduction Florence deserves.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--florence)"><span class="d">13</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Sunday</div><h3>The Uffizi</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">08:30</span><span class="ev"><strong>Uffizi Gallery</strong> — first slot <span class="tag timed">book early</span><span class="note">Botticelli, Leonardo, Michelangelo, Caravaggio. Three hours is plenty. Books out well ahead, like the Borghese in Rome.</span></span></li>
+      <li><span class="t">12:30</span><span class="ev"><strong>Lunch</strong></span></li>
+      <li><span class="t">14:30</span><span class="ev"><strong>Oltrarno, across the river</strong> <span class="tag rest">unstructured</span><span class="note">The artisan side of Florence — quieter, and where Florentines actually eat.</span></span></li>
+      <li><span class="t">17:30</span><span class="ev"><strong>Piazzale Michelangelo for sunset</strong><span class="note">Take bus 12 or 13 up rather than climbing. The classic view over the city and the Duomo.</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Dinner around Santo Spirito</strong></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--florence)"><span class="d">14</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Monday</div><h3>Day trip to Siena</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">!</span><p><strong>Monday closes the Uffizi, the Accademia and the Pitti Palace all at once.</strong> So this becomes the day trip — which doesn't care about museum hours. The calendar working in our favour rather than against it.</p></div>
+      <ul class="sched">
+      <li><span class="t">08:30</span><span class="ev"><strong>Coach to Siena</strong> <span class="tag book">book ahead</span><span class="note">Around 1hr15 direct. The bus is better than the train here — it drops you far closer to the centre.</span></span></li>
+      <li><span class="t">10:00</span><span class="ev"><strong>Piazza del Campo</strong><span class="note">The shell-shaped square where the Palio is run. Sit in it before doing anything else.</span></span></li>
+      <li><span class="t">11:00</span><span class="ev"><strong>Siena Duomo</strong><span class="note">Striped marble inside and out, an inlaid marble floor, and the Piccolomini Library's frescoes — arguably more startling than Florence's cathedral.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch on the Campo</strong> <span class="tag rest">slow</span></span></li>
+      <li><span class="t free">late pm</span><span class="ev"><strong>Return to Florence</strong><span class="note">Organised tours often add San Gimignano and a Chianti stop — good value if L would rather not navigate buses.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--florence)"><span class="d">15</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Tuesday</div><h3>David &amp; the Duomo</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">08:30</span><span class="ev"><strong>Accademia — Michelangelo's David</strong> <span class="tag timed">book slot</span><span class="note">An hour is enough. Go first thing; the queue without a booking is punishing.</span></span></li>
+      <li><span class="t">10:30</span><span class="ev"><strong>The Duomo complex</strong> <span class="tag timed">book slot</span><span class="note">The Baptistery's Gates of Paradise and the Opera del Duomo Museum, which holds the originals.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch at Mercato Centrale</strong></span></li>
+      <li><span class="t">15:00</span><span class="ev"><strong>Medici Chapels, or rest</strong> <span class="tag rest">optional</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Last Florence dinner</strong></span></li>
+    </ul>
+      <div class="callout"><span class="ic">↑</span><p><strong>Skip the dome climb.</strong> Brunelleschi's dome is 463 steps, no lift, and once you start there's no turning back — the staircase is one-way and narrow. The Baptistery and the museum give you the same artistry without the ordeal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROME ===================== -->
+<section id="rome">
+  <div class="eyebrow">Leg three</div>
+  <h2 class="city">Rome <span class="nights" style="background:var(--rome)">5 nights · 16–21 Sep</span></h2>
+  <p class="blurb">Four full days and four genuine must-sees, so this is the fullest stretch of
+  the trip. The lighter Borghese day sits deliberately between the two heavy ones. Stay in Monti,
+  Trastevere, or near Piazza Navona — and not immediately around Termini, particularly for evenings.</p>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--transit)"><span class="d">16</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Wednesday · Travel day</div><h3>Florence → Rome</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">10:30</span><span class="ev"><strong>Fast train, Firenze S.M.N. → Roma Termini</strong> <span class="tag book">book ahead</span><span class="note">1hr30, city centre to city centre. No airport, no transfer, no luggage stress — this is why Florence beat Venice.</span></span></li>
+      <li><span class="t">~12:30</span><span class="ev"><strong>Arrive, check in</strong></span></li>
+      <li><span class="t free">afternoon</span><span class="ev"><strong>Rest</strong> <span class="tag rest">rest</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>First walk: the Trevi Fountain after dark</strong><span class="note">Late evening is the only time it's bearable. By day it's a genuine crush.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--rome)"><span class="d">17</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Thursday</div><h3>The Vatican</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">▲</span><p><strong>Dress code is enforced:</strong> shoulders and knees covered, for both the Museums and St Peter's. A light scarf in the bag solves it. Deliberately a Thursday — the Vatican on a Saturday is considerably worse.</p></div>
+      <ul class="sched">
+      <li><span class="t">08:00</span><span class="ev"><strong>Vatican Museums</strong> — earliest slot <span class="tag timed">book slot</span><span class="note">Official site only; resellers charge a large markup. Ends at the Sistine Chapel.</span></span></li>
+      <li><span class="t">11:30</span><span class="ev"><strong>St Peter's Basilica</strong> <span class="tag free-t">free entry</span><span class="note">Michelangelo's Pietà is just inside on the right. Skip the dome — 551 steps.</span></span></li>
+      <li><span class="t">13:30</span><span class="ev"><strong>Lunch in Prati</strong><span class="note">Walk a few streets from the walls and prices halve.</span></span></li>
+      <li><span class="t free">afternoon</span><span class="ev"><strong>Rest — not optional</strong> <span class="tag rest">rest</span><span class="note">Four to five hours on marble floors is more tiring than it sounds.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--rome)"><span class="d">18</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Friday</div><h3>Borghese &amp; the gardens</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>Galleria Borghese</strong> — 2hr timed slot <span class="tag book">book first</span><span class="note"><strong>Sells out further ahead than anything else in Rome.</strong> Entry is strictly limited and strictly timed. Bernini's sculpture at arm's length — marble that behaves like flesh.</span></span></li>
+      <li><span class="t">11:15</span><span class="ev"><strong>Villa Borghese gardens</strong> <span class="tag rest">restful</span><span class="note">Out to the Pincio terrace for the view over Piazza del Popolo.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch</strong></span></li>
+      <li><span class="t">15:00</span><span class="ev"><strong>Spanish Steps &amp; Via dei Condotti</strong> <span class="tag rest">unstructured</span><span class="note">Downhill from the gardens, conveniently.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--rome)"><span class="d">19</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Saturday</div><h3>Ancient Rome</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">08:30</span><span class="ev"><strong>Colosseum</strong> — first slot <span class="tag timed">book slot</span><span class="note">Released 30 days ahead and sells out. <strong>If it's gone, book a guided tour</strong> — tours hold a separate ticket allocation.</span></span></li>
+      <li><span class="t">10:30</span><span class="ev"><strong>Roman Forum &amp; Palatine Hill</strong><span class="note">Strongly worth a guide — the Forum is close to unreadable without one. Uneven ground and very little shade; a hat and water matter here.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch in Monti</strong><span class="note">Just uphill, and far better than anything by the Colosseum.</span></span></li>
+      <li><span class="t free">afternoon</span><span class="ev"><strong>Rest, or the Capitoline Museums</strong> <span class="tag rest">optional</span><span class="note">Air-conditioned, if the morning hasn't finished her off.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--rome)"><span class="d">20</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Sunday</div><h3>Trastevere &amp; the centro storico</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">!</span><p><strong>The Vatican is closed on Sundays</strong> — already covered on Thursday. Today is loose by design: the last full day in Italy, with nothing timed.</p></div>
+      <ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>Porta Portese flea market</strong> <span class="tag rest">optional</span><span class="note"><strong>Sunday mornings only.</strong> Enormous and enjoyable — and a well-known pickpocket spot, so bag in front.</span></span></li>
+      <li><span class="t">11:00</span><span class="ev"><strong>Santa Maria in Trastevere</strong><span class="note">Twelfth-century gold mosaics, and usually almost empty.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>A long Trastevere lunch</strong> <span class="tag rest">slow</span></span></li>
+      <li><span class="t">15:30</span><span class="ev"><strong>Pantheon</strong> <span class="tag timed">book · ~€5</span><span class="note">Still the largest unreinforced concrete dome in the world, nineteen centuries on.</span></span></li>
+      <li><span class="t">16:30</span><span class="ev"><strong>Piazza Navona &amp; Campo de' Fiori</strong><span class="note">Gelato. Then pack.</span></span></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ===================== ATHENS ===================== -->
+<section id="athens">
+  <div class="eyebrow">Leg four</div>
+  <h2 class="city">Athens <span class="nights" style="background:var(--athens)">3 nights · 21–24 Sep</span></h2>
+  <p class="blurb">Late September is the best time of year to be here — the sea is still warm, the
+  ferries still run, and both the August crowds and the worst heat have gone. Stay in Plaka,
+  Koukaki or near Syntagma; avoid Omonia at night.</p>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--transit)"><span class="d">21</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Monday · Travel day</div><h3>Rome → Athens</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout info"><span class="ic">⏱</span><p><strong>Greece is one hour ahead of Italy.</strong> L loses an hour on this flight — worth setting the phone on landing.</p></div>
+      <ul class="sched">
+      <li><span class="t">morning</span><span class="ev"><strong>Transfer to Fiumicino</strong> <span class="tag book">book ahead</span></span></li>
+      <li><span class="t">midday</span><span class="ev"><strong>Flight to Athens</strong> <span class="tag book">book now</span><span class="note">~2hrs. Aegean, ITA, Sky Express.</span></span></li>
+      <li><span class="t">~16:00</span><span class="ev"><strong>Into the city</strong><span class="note">Metro Line 3 runs airport to Syntagma in about 40 minutes, or a fixed-rate taxi.</span></span></li>
+      <li><span class="t">17:00</span><span class="ev"><strong>Check in</strong> <span class="tag book">confirm storage</span><span class="note"><strong>Confirm the hotel will store the main suitcase</strong> during the Hydra nights, and that the same room is booked again for the 26th.</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Rooftop dinner with an Acropolis view</strong><span class="note">Worth booking — the good tables go.</span></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--athens)"><span class="d">22</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Tuesday</div><h3>The Acropolis</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">☀</span><p><strong>The 08:00 slot is not negotiable.</strong> It's about heat and crowds equally. Also: the marble underfoot is genuinely slippery, polished by millions of feet — proper shoes with grip, not sandals.</p></div>
+      <ul class="sched">
+      <li><span class="t">08:00</span><span class="ev"><strong>Acropolis</strong> — first slot <span class="tag timed">book slot</span><span class="note">Timed entry is now mandatory. The Propylaea, the Parthenon, the Erechtheion and its caryatids.</span></span></li>
+      <li><span class="t">10:30</span><span class="ev"><strong>Down past the Odeon of Herodes Atticus</strong></span></li>
+      <li><span class="t">11:00</span><span class="ev"><strong>Acropolis Museum</strong> <span class="tag timed">book slot</span><span class="note">Air-conditioned, and the top-floor Parthenon gallery is laid out to the temple's exact orientation — it makes sense of everything she just walked through.</span></span></li>
+      <li><span class="t">13:30</span><span class="ev"><strong>Lunch in Makrigianni</strong></span></li>
+      <li><span class="t free">afternoon</span><span class="ev"><strong>Rest through the heat</strong> <span class="tag rest">rest</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Dinner in Plaka</strong></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--athens)"><span class="d">23</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Wednesday</div><h3>The Agora, then Cape Sounion</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>Ancient Agora</strong><span class="note">The Temple of Hephaestus is the best-preserved Greek temple anywhere — better preserved than the Parthenon, and far quieter.</span></span></li>
+      <li><span class="t">11:30</span><span class="ev"><strong>Monastiraki, Roman Agora, Hadrian's Library</strong> <span class="tag rest">unstructured</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch, then rest</strong> <span class="tag rest">rest</span><span class="note">A late afternoon out means a real break first.</span></span></li>
+      <li><span class="t">15:30</span><span class="ev"><strong>Depart for Cape Sounion</strong> <span class="tag book">book ahead</span><span class="note">About 1hr30 down the coast road. Half-day tours run from central Athens.</span></span></li>
+      <li><span class="t">18:00</span><span class="ev"><strong>Temple of Poseidon at sunset</strong><span class="note">On a headland above the Aegean, sunset around 19:15. The single most memorable evening of the Greek leg.</span></span></li>
+      <li><span class="t">~21:00</span><span class="ev"><strong>Back in Athens</strong></span></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ===================== HYDRA ===================== -->
+<section id="hydra">
+  <div class="eyebrow">Leg five</div>
+  <h2 class="city">Hydra <span class="nights" style="background:var(--hydra)">2 nights · 24–26 Sep</span></h2>
+  <p class="blurb">The decompression at the end of three weeks. An hour and fifty minutes from
+  Athens, no flight to miss, and no cars — none at all. Small enough to be entirely walkable,
+  and comfortable to be alone in.</p>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--hydra)"><span class="d">24</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Thursday</div><h3>Across to the island</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">🧳</span><p><strong>Overnight bag only.</strong> The main suitcase stays at the Athens hotel. Hydra has no cars, no scooters and no buses — luggage moves by donkey or hand-cart, and much of the town is up steps. Book a room near the harbour.</p></div>
+      <ul class="sched">
+      <li><span class="t">09:00</span><span class="ev"><strong>To Piraeus</strong><span class="note">Taxi is simplest with a bag. The metro to Piraeus is a known pickpocket route.</span></span></li>
+      <li><span class="t">10:30</span><span class="ev"><strong>Fast ferry to Hydra</strong> <span class="tag book">book ahead</span><span class="note">Around 1hr50. Book both directions now — September sailings fill.</span></span></li>
+      <li><span class="t">~12:30</span><span class="ev"><strong>Arrive Hydra town</strong><span class="note">The harbour is a natural amphitheatre of stone houses. Settle in slowly.</span></span></li>
+      <li><span class="t free">afternoon</span><span class="ev"><strong>First swim</strong> <span class="tag rest">easy</span><span class="note">Spilia or Hydronetta — swimming here is off <strong>rocky platforms with ladders, not sand</strong>. Worth knowing before arriving with beach expectations.</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Dinner on the harbour</strong></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--hydra)"><span class="d">25</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Friday</div><h3>A day with nothing in it</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">10:00</span><span class="ev"><strong>Coastal path to Kamini and Vlychos</strong> <span class="tag rest">gentle</span><span class="note">About forty minutes in total, largely flat, seaside the whole way.</span></span></li>
+      <li><span class="t">13:00</span><span class="ev"><strong>Lunch at a Vlychos beach taverna</strong><span class="note">Water taxi back if the walk was enough — they run all day and are part of the fun.</span></span></li>
+      <li><span class="t">17:00</span><span class="ev"><strong>Historical Archives Museum</strong> <span class="tag rest">optional</span><span class="note">Small and good on Hydra's outsized role in the Greek War of Independence.</span></span></li>
+      <li><span class="t">19:00</span><span class="ev"><strong>Sunset drinks at Hydronetta</strong><span class="note">On the rocks, facing west. The right way to end the trip.</span></span></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ===================== HOME ===================== -->
+<section id="home">
+  <div class="eyebrow">Leg six</div>
+  <h2 class="city">Athens again, then home <span class="nights" style="background:var(--transit)">1 night · 26–27 Sep</span></h2>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--athens)"><span class="d">26</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Saturday</div><h3>Back to the mainland</h3></div>
+    </div>
+    <div class="day-body"><ul class="sched">
+      <li><span class="t">11:30</span><span class="ev"><strong>Ferry Hydra → Piraeus</strong> <span class="tag book">booked</span><span class="note">This buffer day is the whole reason a cancelled ferry can't threaten tomorrow's flight.</span></span></li>
+      <li><span class="t">~14:00</span><span class="ev"><strong>Back at the Athens hotel</strong><span class="note">Reunited with the suitcase.</span></span></li>
+      <li><span class="t">16:00</span><span class="ev"><strong>National Archaeological Museum, or rest</strong> <span class="tag rest">optional</span><span class="note">Mycenaean gold and the Antikythera mechanism. Closed Tuesdays, which is why it lands here rather than earlier.</span></span></li>
+      <li><span class="t free">evening</span><span class="ev"><strong>Farewell dinner, then repack</strong></span></li>
+    </ul></div>
+  </div>
+
+  <div class="day">
+    <div class="day-head">
+      <div class="date-badge" style="background:var(--transit)"><span class="d">27</span><span class="m">Sep</span></div>
+      <div class="day-title"><div class="dow">Sunday · Travel day</div><h3>Athens → London</h3></div>
+    </div>
+    <div class="day-body">
+      <div class="callout"><span class="ic">▲</span><p><strong>The UK eVisa must be live and linked to L's current passport.</strong> Airlines check this at boarding. It is the one item on this entire trip that could actually strand her — confirm it long before departure, not on the day.</p></div>
+      <ul class="sched">
+      <li><span class="t">morning</span><span class="ev"><strong>Checkout, out to the airport</strong><span class="note">Allow three hours — this is a non-Schengen departure, so there's passport control on the way out.</span></span></li>
+      <li><span class="t">midday</span><span class="ev"><strong>Flight to London</strong> <span class="tag book">book now</span><span class="note">Direct, around 3hr45. Aegean, BA, easyJet.</span></span></li>
+      <li><span class="t free">—</span><span class="ev"><strong>Home</strong></span></li>
+    </ul></div>
+  </div>
+</section>
+
+<!-- ===================== BOOKINGS ===================== -->
+<section id="bookings">
+  <div class="eyebrow">Critical path</div>
+  <h2 class="city">Booking checklist</h2>
+  <p class="blurb">Ordered by <strong>deadline, not by trip order</strong>. Ticks are saved in this
+  browser. Departure is 7 September.</p>
+
+  <div class="tier t0">
+    <h4>Tier 0 — before anything else</h4>
+    <div class="when">Today · nothing else matters until these are done</div>
+    <label class="chk"><input type="checkbox" data-k="t0a"><span><strong>Confirm L's UK eVisa is live and linked to her current passport.</strong> BRP cards were replaced by digital eVisas. Airlines check at boarding for the return leg. If this isn't sorted, don't spend money on flights yet.</span></label>
+    <label class="chk"><input type="checkbox" data-k="t0b"><span><strong>Read the Schengen visa sticker.</strong> Confirm validity covers through 28 Sep and "duration of stay" is at least 21 days. Single-entry is fine — she never leaves Schengen mid-trip.</span></label>
+    <label class="chk"><input type="checkbox" data-k="t0c"><span>Passport valid at least 3 months beyond 27 Sep.</span></label>
+    <label class="chk"><input type="checkbox" data-k="t0d"><span><strong>Travel insurance with medical cover.</strong> A UK GHIC helps with state healthcare in the EU but is not a substitute.</span></label>
+  </div>
+
+  <div class="tier t1">
+    <h4>Tier 1 — transport &amp; beds</h4>
+    <div class="when">Within 48 hours · prices climb daily at this range</div>
+    <label class="chk"><input type="checkbox" data-k="t1a"><span>Flight Paris → Florence (Sat 12 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1b"><span>Train Florence → Rome (Wed 16 Sep) — Frecciarossa or Italo</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1c"><span>Flight Rome → Athens (Mon 21 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1d"><span>Flight Athens → London (Sun 27 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1e"><span>Paris hotel · 5 nights</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1f"><span>Florence hotel · 4 nights</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1g"><span><strong>Rome hotel · 5 nights</strong> — central September availability is the tight one</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1h"><span><strong>Athens hotel · both stays at the same property</strong>, and confirm luggage storage across the Hydra nights</span></label>
+    <label class="chk"><input type="checkbox" data-k="t1i"><span>Hydra room · 2 nights, near the harbour</span></label>
+  </div>
+
+  <div class="tier t2">
+    <h4>Tier 2 — timed entry</h4>
+    <div class="when">Within ~4 days · these sell out, not just get pricier</div>
+    <label class="chk"><input type="checkbox" data-k="t2a"><span><strong>Galleria Borghese</strong> (Fri 18 Sep) — books out furthest ahead of anything in Rome</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2b"><span><strong>Uffizi</strong> (Sun 13 Sep) — first slot</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2c"><span><strong>Vatican Museums</strong> (Thu 17 Sep) — official site only</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2d"><span><strong>Colosseum</strong> (Sat 19 Sep) — released 30 days ahead; if sold out, book a guided tour instead</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2e"><span><strong>Acropolis</strong> (Tue 22 Sep) — 08:00 slot, official e-ticket site</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2f"><span>Accademia — David (Tue 15 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2g"><span>Louvre (Wed 9 Sep) · Orangerie (Wed 9 Sep) · Musée d'Orsay (Thu 10 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2h"><span>Eiffel Tower summit (Thu 10 Sep) — book the summit specifically</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2i"><span>Sainte-Chapelle (Tue 8 Sep) · Notre-Dame slot in the official app</span></label>
+    <label class="chk"><input type="checkbox" data-k="t2j"><span>Acropolis Museum (Tue 22 Sep) · Pantheon (Sun 20 Sep) · Duomo complex (Tue 15 Sep)</span></label>
+  </div>
+
+  <div class="tier t3">
+    <h4>Tier 3 — before departure</h4>
+    <div class="when">Any time in the next week</div>
+    <label class="chk"><input type="checkbox" data-k="t3a"><span><strong>Hydra ferries, both directions</strong> (24 and 26 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3b"><span>Siena day trip (Mon 14 Sep) · Cape Sounion sunset trip (Wed 23 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3c"><span>Colosseum / Roman Forum guided tour, if wanted</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3d"><span>Airport transfers: Gare du Nord arrival, Florence, Fiumicino, Athens</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3e"><span>Evening Seine cruise (Tue 8 Sep)</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3f"><span>eSIM covering France, Italy and Greece</span></label>
+    <label class="chk"><input type="checkbox" data-k="t3g"><span>Notify card issuers of travel dates</span></label>
+  </div>
+</section>
+
+<!-- ===================== NOTES ===================== -->
+<section id="notes">
+  <div class="eyebrow">Worth knowing</div>
+  <h2 class="city">Practical notes</h2>
+  <div class="grid">
+    <div class="note-card">
+      <h4>Staying safe</h4>
+      <p>The realistic risk on this route is <strong>pickpocketing, not violence</strong>. Known hotspots: Paris Métro lines 1 and 4, and Gare du Nord; the "friendship bracelet" approach on the Montmartre steps; Rome's bus 64 and Termini; Porta Portese market; the Athens metro to Piraeus, and Monastiraki.</p>
+      <p>A cross-body bag worn in front and no phone in a back pocket handles nearly all of it.</p>
+      <p><strong>112</strong> is the emergency number in France, Italy and Greece alike.</p>
+    </div>
+    <div class="note-card">
+      <h4>Heat &amp; pacing</h4>
+      <p>Rome in mid-September still reaches about 28°C; Athens about 30°C. That is precisely why every anchor activity sits in the morning and every afternoon is free.</p>
+      <p>Ancient sites have almost no shade — the Roman Forum and the Acropolis especially. Hat, water, and shoes with grip. <strong>Acropolis marble is genuinely slippery.</strong></p>
+    </div>
+    <div class="note-card">
+      <h4>Eating alone</h4>
+      <p>Making <strong>lunch the main meal</strong> is the easiest solution, and it suits the pace anyway.</p>
+      <p>For dinner, booking early — 19:30 in Rome or Athens is well before the local 21:00 norm — means a calmer room and more attentive staff. Counter and bar seating is completely normal for one.</p>
+    </div>
+    <div class="note-card">
+      <h4>Money</h4>
+      <p>Cards and Google Pay work throughout all three countries. No cash dependency.</p>
+      <p>When a card terminal offers to charge in <strong>pounds instead of euros, always decline</strong> and pay in local currency — the "convenience" rate is consistently poor.</p>
+      <p>Carry a modest amount of euro cash for Hydra, small tavernas, and the odd ferry kiosk.</p>
+    </div>
+    <div class="note-card">
+      <h4>Steps &amp; stamina</h4>
+      <p>Three climbs are deliberately skipped: Florence's <strong>dome, 463 one-way steps</strong>; St Peter's <strong>dome, 551</strong>; and the walk up to Piazzale Michelangelo. Lifts, buses and funiculars are used instead throughout.</p>
+      <p>Hydra is the exception — the town is built up a hillside, hence booking near the harbour.</p>
+    </div>
+    <div class="note-card">
+      <h4>Laundry</h4>
+      <p>Three weeks needs one mid-trip wash. <strong>Rome, 16–21 September</strong>, is the natural point — it's the longest single stay in the second half.</p>
+      <p>Most hotels will do it, and self-service laundrettes are common in Trastevere and Monti.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p><strong>First pass — for review.</strong> Opening hours, closure days, prices and sunset
+  times shift seasonally and must be re-checked against official sites when booking. Museum
+  closure days have been designed around, so if one has changed, tell me and the affected day
+  needs rearranging rather than just swapping an entry.</p>
+  <p>Costs are not yet included; the estimate lives in the design spec alongside this file.</p>
+</div></footer>
+
+</div>
+
+<script>
+(function(){
+  var boxes = document.querySelectorAll('label.chk input[type=checkbox]');
+  var KEY = 'leur26.bookings';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { saved = {}; }
+  boxes.forEach(function(b){
+    if (saved[b.dataset.k]) b.checked = true;
+    b.addEventListener('change', function(){
+      saved[b.dataset.k] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e) {}
+    });
+  });
+})();
+</script>
+</body>
+</html>
