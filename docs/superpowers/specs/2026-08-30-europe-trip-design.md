@@ -99,7 +99,13 @@ Rome. Venice was rejected as the harder option (stepped bridges with
 luggage, a 4hr train to Rome); Bologna as the one without an Uffizi.
 
 **Closure days resolved into the plan:**
-- **Tue 8 Sep** — Louvre and Orangerie closed → gentle Île de la Cité day.
+- **Tue 8 Sep** — Louvre and Orangerie closed → Île de la Cité and the
+  Marais, a walkable day with nothing timed but the evening cruise.
+- **Fri 11 Sep** — Versailles. Closed Mondays, and **Tuesday is its worst
+  day**, because the Louvre and Orangerie closing pushes Paris's crowds
+  out there. Weekends are worse again. Friday is the quietest option
+  available. The trade is that the musical fountain shows run at weekends
+  and some Tuesdays, so a Friday visit sees none.
 - **Mon 14 Sep** — Uffizi, Accademia and Pitti all closed → Siena day trip,
   which is indifferent to museum hours.
 - **Sun 20 Sep** — Vatican closed → Vatican moved to Thu 17 Sep, which is
@@ -109,9 +115,22 @@ luggage, a 4hr train to Rome); Bologna as the one without an Uffizi.
 
 ### Accepted trade-offs
 
-**Paris loses its day trip.** At 5 nights there is room for the city's own
-highlights or Versailles/Giverny, not both. The Eiffel Tower and
-Montmartre were protected instead, as this is a first visit.
+**Paris's three city days are now tightly packed.** Adding Versailles as
+a full-day excursion to a 5-night stay means the remaining days are
+grouped by *geography* rather than theme, so each stays within one
+walkable quarter: Île de la Cité with the Marais; the Louvre, Orangerie
+and Eiffel Tower along the single Tuileries axis; Montmartre early paired
+with the Orsay in the afternoon.
+
+Wednesday 9 September is the fullest day of the Paris leg. It works only
+because everything sits on one straight line and a two-hour rest is built
+in before the Eiffel Tower. The Orangerie is marked as the first thing to
+drop if the Louvre has already been enough.
+
+**Versailles is the most walking of the whole trip** — more than the
+Vatican or the Roman Forum. The plan budgets for the petit train out to
+the Trianon rather than the 30-minute walk each way. Giverny remains the
+gentler alternative if this proves too much.
 
 **Rome has no rest day.** Five nights against four genuine must-sees makes
 this the fullest stretch of the trip. The lighter Borghese day is placed
@@ -239,7 +258,7 @@ journal/                  daily entries written during the trip
 1. **Budget band** — confirm or correct the mid-range assumption in §1.
    It changes hotel selection, not the itinerary's shape.
 2. **Return date** — 27 Sep gives 20 nights. If 28 Sep is also viable,
-   the extra night is best spent in Paris, which is the leg that lost
-   its day trip.
+   the extra night is best spent in Paris, which is now the most
+   compressed leg of the trip.
 3. **Rome guided tours** — worth booking a guide for the Forum, and
    possibly the Vatican. Confirm appetite and budget for these.
